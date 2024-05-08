@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/images/logo.svg";
+import apple from "../assets/images/apple.svg";
 import Search from "../assets/images/search.svg";
 import Store from "../assets/images/store.svg";
 
@@ -22,7 +22,12 @@ const Navbar = () => {
       <div className="nav-content">
         <ul className="list-styled">
           <li>
-            <img src={Logo} alt="Apple" />
+            <img
+              src={apple}
+              alt="Apple"
+              width="20rem"
+              style={{ paddingTop: "10px" }}
+            />
           </li>
           {links.map((item, i) => (
             <li key={i}>
@@ -42,4 +47,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-////15:01
